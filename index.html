@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GC Threads - Login</title>
+    <link rel="stylesheet" href="../Backend/style.css" />
+</head>
+<body>
+    <div id="loginPage" class="page active">
+        <div class="container">
+            <div class="login-card">
+                <div class="logo-container">
+                    <div class="logo-circle">G</div>
+                    <h1>GC-THREADS</h1>
+                    <p class="subtitle">Student Concerns Platform</p>
+                </div>
+
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label>GC Email Address</label>
+                        <div class="input-wrapper">
+                            <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-label="Email icon">
+                                <rect x="3" y="5" width="18" height="14" rx="2"/>
+                                <path d="M3 7l9 6 9-6"/>
+                            </svg>
+                            <input type="email" id="loginEmail" placeholder="student@gordoncollege.edu.ph" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Password</label>
+                        <div class="input-wrapper">
+                            <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-label="Password icon">
+                                <rect x="5" y="11" width="14" height="10" rx="2"/>
+                                <path d="M7 11V7a5 5 0 0110 0v4"/>
+                            </svg>
+                            <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                        </div>
+                    </div>
+
+                    <div id="loginError" class="error-message hidden"></div>
+
+                    <div class="text-right">
+                        <button type="button" class="link-btn">Forgot Password?</button>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+                        </svg>
+                        Sign In
+                    </button>
+                </form>
+
+                <div class="info-box">
+                    Only GC domain email addresses (@gordoncollege.edu.ph) are allowed.
+                </div>
+
+                <div class="text-center mt-4">
+                    <p class="small-text">Don't have an account?
+                        <button type="button" id="showRegisterBtn" class="link-btn-primary">Create one</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/login-page.js"></script>
+</body>
+</html>
